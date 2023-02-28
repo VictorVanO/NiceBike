@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NiceBikeG5.RCSellers"
+             Title="RCSellers"
+             BackgroundColor="DarkGray">
+    
+    <VerticalStackLayout
+        VerticalOptions="Center">
+
+        <Button
+                x:Name="NewClientBtn"
+                Text="New Client"
+                BackgroundColor="LightBlue"
+                TextColor="Black"
+                FontSize="20"
+                WidthRequest="200"
+                HeightRequest="80"  
+                CornerRadius="12"
+                BorderColor="DarkBlue"
+                BorderWidth="5"
+                SemanticProperties.Hint="Open the client creation view"
+                Clicked="NewClientClicked"
+                HorizontalOptions="Center">
+            <Button.Shadow>
+                <Shadow Brush="Black"
+                Offset="5,10"
+                Radius="10"
+                Opacity="0.6" />
+            </Button.Shadow>
+        </Button>
+        
+        <Button
+                x:Name="ListOfClientsBtn"
+                Text="List of clients"
+                BackgroundColor="White"
+                TextColor="Black"
+                FontSize="20"
+                WidthRequest="200"
+                HeightRequest="80"  
+                CornerRadius="0"
+                BorderColor="Black"
+                BorderWidth="2"
+                SemanticProperties.Hint="Open the list of clients view"
+                Clicked="ListOfClientsClicked"
+                HorizontalOptions="Center"
+                Margin="30">
+            
+        </Button>
+    </VerticalStackLayout>
+    
+</ContentPage>
